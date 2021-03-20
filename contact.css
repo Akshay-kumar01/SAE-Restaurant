@@ -1,0 +1,103 @@
+.Heading
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5vh;
+    background:whitesmoke;
+    position: relative;
+    font: size 4em; ;
+    color:blueviolet ;
+    overflow: hidden;
+}
+.Heading:before
+{
+    content: '';
+    position: absolute;
+    left: 0%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #0000 100%);
+    animation: animate 15s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        left: -20%;
+    }
+    50%
+    {
+        left: 120%;
+    }
+    100%
+    {
+        left: -20%;
+    }
+}
+.Heading::after
+{
+    content: initial;
+}
+*
+{
+    box-sizing: border-box;
+}
+.topnav 
+{
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  .topnav a 
+  {
+    /* float: left; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.1px 5px;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  .topnav a:hover 
+  {
+    /* background-color: #ddd; */
+    color:red;
+  }
+  
+  /* .topnav a.active {
+      background-color:orangered;
+    color: rgb(46, 29, 29);
+  } */
+  .dnld-app-header
+  {
+      color: black;
+      float: right;
+      background-color:yellow;
+  }
+  .INFO
+  {
+        background-blend-mode: darken;
+        font-family: cursive;
+        font-size: 30px;
+        color: #fff;
+        text-align: center;
+        animation: INFO 1s ease-in-out infinite alternate;
+  }
+  @-webkit-keyframes INFO {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+  footer
+  {
+      font-size: xx-large;
+  }
+  hr
+  {
+      color: black;
+  }

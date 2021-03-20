@@ -1,0 +1,88 @@
+* { 
+    padding: 0; 
+    margin: 0; 
+    font-family: sans-serif; 
+} 
+
+body { 
+    background: yellowgreen; 
+} 
+
+.container { 
+    text-align: center; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+} 
+
+.container span { 
+    display: block; 
+} 
+
+.text1 { 
+    color: white; 
+    font-size: 70px; 
+    font-weight: 700; 
+    letter-spacing: 8px; 
+    margin-bottom: 20px; 
+    background: yellowgreen; 
+    position: relative; 
+    animation: text 10s infinite; 
+} 
+
+.text2 { 
+    font-size: 30px; 
+    color: darkgreen; 
+    font-family: Georgia, serif; 
+} 
+
+@keyframes text { 
+    0% { 
+        color: black; 
+        margin-bottom: -40px; 
+    } 
+
+    30% { 
+        letter-spacing: 25px; 
+        margin-bottom: -40px; 
+    } 
+
+    85% { 
+        letter-spacing: 8px; 
+        margin-bottom: -40px; 
+    } 
+} 
+.topnav 
+{
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  .topnav a 
+  {
+    /* float: left; */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.1px 5px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover 
+  {
+    /* background-color: #ddd; */
+    color:red;
+  }
+  
+  /* .topnav a.active {
+      background-color:orangered;
+    color: rgb(46, 29, 29);
+  } */
+  .dnld-app-header
+  {
+      color: black;
+      float: right;
+      background-color:yellow;
+  }
